@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    zoom: 85%;
 }
 
 body {
@@ -19,9 +24,9 @@ header {
     justify-content: space-evenly;
     align-items: center;
     position: fixed;
-    z-index: 99;
+    z-index: 326145175;
     box-shadow: 0 0 10px rgba(1, 37, 36, 0.21);
-    background: rgba(12, 184, 182, 0.21);
+    background: rgb(21, 152, 150);
 }
 
 #chk1 {
@@ -73,9 +78,10 @@ header ul li {
 header ul li a {
     text-decoration: none;
     color: #fff;
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
     margin: 0px 40px;
+    letter-spacing: 1px;
 }
 
 header ul .nav-icons a {
@@ -133,14 +139,6 @@ header .menu {
     }
 }
 
-body {
-    font-family: 'Open Sans', sans-serif;
-    line-height: 20px;
-    color: #999999;
-    font-size: 300;
-    font-size: 16px;
-}
-
 ol,
 ul {
     list-style: none;
@@ -164,17 +162,6 @@ table {
     border-spacing: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    color: #222222;
-}
-
 a,
 a:hover,
 a:focus,
@@ -186,14 +173,6 @@ a:active {
     padding: 60px 0px;
 }
 
-h2 {
-    line-height: 20px;
-    margin: 0;
-    font-size: 28px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
 hr.botm-line {
     height: 3px;
     width: 60px;
@@ -201,99 +180,6 @@ hr.botm-line {
     position: relative;
     border: 0;
     margin: 20px 0 20px 0;
-}
-
-.navbar {
-    margin-bottom: 0px;
-    border: 0px;
-}
-
-.navbar {
-    border-radius: 0px;
-}
-
-.navbar-default {
-    background-color: #fff;
-    padding: 20px 0;
-    transition: all 0.3s;
-}
-
-.navbar-default {
-    background-color: transparent;
-    border: 0px;
-}
-
-.navbar {
-    border-radius: 0px;
-}
-
-.navbar-brand {
-    font-family: 'Chewy', cursive;
-    font-size: 32px;
-}
-
-.navbar-brand img {
-    padding-top: 2px;
-    width: 120px !important;
-}
-
-.navbar-default .navbar-brand,
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-    color: #EA6045;
-}
-
-@media (max-width: 768px) {
-    .navbar-collapse {
-        background: rgba(28, 74, 90, 0.9);
-    }
-}
-
-.top-nav-collapse {
-    padding: 0;
-    background: rgba(28, 74, 90, 0.9);
-}
-
-.white,
-.white:hover,
-.white:focus {
-    color: #fff;
-    width: 100% !important;
-}
-
-.block {
-    display: block;
-}
-
-.navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:focus,
-.navbar-default .navbar-nav>.active>a:hover {
-    color: #fff;
-    text-transform: uppercase;
-    background-color: rgba(12, 184, 182, 0.21);
-}
-
-.navbar-default .navbar-nav>li>a {
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 300;
-}
-
-.navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-nav>li>a:focus {
-    color: #fff;
-    text-transform: uppercase;
-    background-color: rgba(12, 184, 182, 0.21);
-}
-
-.affix {
-    background-color: #ffffff !important;
-}
-
-.affix .navbar-nav>li>a:hover,
-.affix .navbar-nav>li>a:focus {
-    background-color: rgba(12, 184, 182) !important;
 }
 
 #banner {
@@ -310,6 +196,7 @@ hr.botm-line {
 
 .banner-info {
     padding-top: 190px;
+    z-index: 1;
 }
 
 .banner-logo img {
@@ -350,4 +237,81 @@ hr.botm-line {
 .text-primary i {
     padding-top: 8px;
     display: inline-block;
+}
+
+.banner-head {
+    font-weight: bold;
+}
+
+.section-heading {
+    color: rgb(9, 102, 100);
+    text-align: center;
+    margin: 44px 0px;
+    font-weight: 600;
+    font-size: 44px;
+}
+
+.icon i {
+    color: #0cb8b6;
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.service-card {
+    width: 405px;
+    background-color: #0cb8b6;
+    padding: 44px 12px 44px 22px;
+    flex: 1 1 10px;
+}
+
+.service-cards .service-card span {
+    font-size: 28px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.service-cards .service-card p {
+    color: white;
+    margin-top: 12px;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 70px;
+    gap: 3px;
+}
+
+th,
+td {
+    width: 200px;
+    padding: 5px;
+}
+
+.dream-head {
+    text-transform: uppercase;
+}
+
+.service-left {
+    margin-right: 50px;
+}
+
+.service-dream-cont span {
+    color: white;
+    background-color: #0cb8b6;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.service-dream-cont {
+    display: flex;
+    gap: 22px;
+}
+
+.border-btm {
+    border-bottom: 4px solid rgb(179, 48, 48);
+    width: 100px;
+    margin: 18px 0px;
 }
