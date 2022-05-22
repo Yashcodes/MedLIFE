@@ -13,34 +13,75 @@
     <title>MedLIFE - Live Healthy, Live Free</title>
 </head>
 
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-    <header>
-        <input type="checkbox" name="" id="chk1" />
-        <div class="logo">
-            <h1>MedLIFE</h1>
-        </div>
+<body>
 
-        <ul class="nav-items-list">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./service.html">Services</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+    <nav class="navbar navbar-light  fixed-top ">
+        <div class="container-fluid navigation-panel d-flex justify-content-evenly flex-wrap">
+            <a class="navbar-brand d-flex align-items-center gap-2 brand-color" href="./index.html">MedLIFE</a>
 
-        <ul class="nav-item-icons mb-0">
-            <li class="nav-icons">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-            </li>
-        </ul>
-        <div class="menu">
-            <label for="chk1">
-          <i class="fa fa-bars"></i>
-        </label>
-        </div>
-    </header>
-
+            <button class="navbar-toggler py-0 px-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        MedLIFE
+                    </h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./service.html"
+                    >Services</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#popular"
+                    >Popular</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#review"
+                    >Review</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#contact"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <nav class="navbar-menus">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav-item-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item-link" href="./service.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item-link" href="#popular">Popular</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item-link" href="#review">Review</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+    </nav>
+    </div>
+    </nav>
     <section id="banner" class="banner">
         <div class="bg-color">
 
@@ -78,6 +119,7 @@
                         </div>
                         <div class="icon-info">
                             <h4>24 Hour Support</h4>
+                            <p class="border-btm"></p>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique autem nesciunt ipsam.
                             </p>
@@ -89,6 +131,7 @@
                         </div>
                         <div class="icon-info">
                             <h4>Emergency Services</h4>
+                            <p class="border-btm"></p>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque voluptatem modi explicabo!.
                             </p>
@@ -102,6 +145,7 @@
                         </div>
                         <div class="icon-info">
                             <h4>Medical Counseling</h4>
+                            <p class="border-btm"></p>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure esse iusto error.
                             </p>
@@ -113,6 +157,7 @@
                         </div>
                         <div class="icon-info">
                             <h4>Premium Healthcare</h4>
+                            <p class="border-btm"></p>
                             <p class="">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatum aperiam nemo.
                             </p>
@@ -156,12 +201,12 @@
 
         <div class="container mt-5">
             <div class="row">
-                <div class="col-md-3 col-sm-4 col-xs-12 service-left">
+                <div class="col-md-5 col-sm-8 col-xs-12 service-left">
                     <h2>The MedLIFE Ultimate Dream</h2>
                     <p class="border-btm"></p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem culpa perspiciatis odio impedit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <p class="service-left-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem culpa perspiciatis odio impedit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                 </div>
-                <div class="col-md-6 col-sm-6">
+                <div class="col-md-6 col-sm-8">
                     <div class="service-dream-cont">
                         <div class="left">
                             <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">

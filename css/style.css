@@ -6,6 +6,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 html {
     zoom: 85%;
 }
@@ -15,128 +19,6 @@ body {
     background-size: cover;
     height: 100vh;
     background-position: center;
-}
-
-header {
-    width: 100%;
-    height: 60px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    position: fixed;
-    z-index: 326145175;
-    box-shadow: 0 0 10px rgba(1, 37, 36, 0.21);
-    background: rgb(21, 152, 150);
-}
-
-#chk1 {
-    display: none;
-}
-
-i {
-    color: #fff;
-    cursor: pointer;
-}
-
-header .logo {
-    flex: 1;
-    color: #fff;
-    margin-left: 50px;
-}
-
-header .logo h1 {
-    margin: 0px;
-    font-size: 34px;
-}
-
-header .search-box {
-    flex: 1;
-    position: relative;
-}
-
-header .nav-items-list {
-    flex: 2;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 0px;
-    padding: 0px;
-}
-
-header .nav-item-icons li a {
-    margin: 0px 22px;
-}
-
-header .nav-item-icons {
-    padding: 0px;
-    margin-right: 50px;
-}
-
-header ul li {
-    list-style: none;
-}
-
-header ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin: 0px 40px;
-    letter-spacing: 1px;
-}
-
-header ul .nav-icons a {
-    margin: 0px 10px;
-}
-
-header ul li a:hover {
-    border-bottom: 2px solid cadetblue;
-}
-
-header .menu {
-    font-size: 2.5em;
-    display: none;
-}
-
-@media (max-width: 1200px) {
-    .search-box button {
-        position: absolute;
-    }
-    header .nav-items-list {
-        position: fixed;
-        top: 60px;
-        right: -100%;
-        background: rgba(0, 0, 0, 0.5);
-        height: calc(100vh - 60px);
-        width: 50%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: right 0.5s linear;
-    }
-    header .nav-item-icons {
-        position: fixed;
-        top: 60px;
-        right: -100%;
-        background: rgba(0, 0, 0, 0.5);
-        height: calc(100vh - 60px);
-        width: 50%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: right 0.5s linear;
-        margin: 0px;
-    }
-    header .nav-item-icons li a {
-        margin: 22px 22px;
-    }
-    header .menu {
-        display: block;
-        width: 100px;
-        text-align: center;
-    }
-    #chk1:checked~ul {
-        right: 0;
-    }
 }
 
 ol,
@@ -157,11 +39,6 @@ q:after {
     content: none;
 }
 
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
 a,
 a:hover,
 a:focus,
@@ -180,6 +57,80 @@ hr.botm-line {
     position: relative;
     border: 0;
     margin: 20px 0 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+    header #menu-bar {
+        display: block;
+        border: 1px solid gray;
+        padding: 4px 6px;
+        cursor: pointer;
+    }
+    header #menu-bar {
+        margin: 0px 24px;
+    }
+}
+
+.navbar-toggler,
+.navbar-toggler-icon {
+    display: none;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-toggler,
+    .navbar-toggler-icon {
+        display: inline-block;
+    }
+    .navbar-menus {
+        display: none;
+    }
+    .navigation-panel {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .navigation-panel .log-sign {
+        display: none
+    }
+}
+
+.navbar {
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(1, 37, 36, 0.21);
+    background: rgb(21, 152, 150);
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.brand-color {
+    color: white;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0px;
+}
+
+.nav-item-link {
+    margin: 0px 18px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.nav-item-link:hover {
+    background-color: #081a62;
+    color: white;
+    padding: 4px 8px;
+    transition: 0.4s all ease;
+    border-radius: 6px;
 }
 
 #banner {
@@ -309,6 +260,17 @@ td {
 .service-dream-cont {
     display: flex;
     gap: 22px;
+}
+
+@media screen and (max-width: 576px) {
+    .service-left-info {
+        flex: 1 1 10px;
+        margin: 0px;
+    }
+    .service-left {
+        margin-left: 0px;
+        margin-bottom: 44px;
+    }
 }
 
 .border-btm {
